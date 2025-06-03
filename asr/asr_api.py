@@ -60,6 +60,9 @@ def asr():
     
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+    
+    # command for windows
+    # curl.exe -F "file=@C:/Users/caleb/cv-valid-dev/sample-000000.mp3" http://localhost:8001/asr
 
 # run
 if __name__ == '__main__':
